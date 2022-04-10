@@ -17,6 +17,8 @@
 
 int DEFAULTV = 200;
 
+//int phototransU = 7; //the nightime sensor
+//int phototransC =8; //the center sensor
 int phototransR = 9; //the right sensor
 int phototransL = 10;//the left sensor
 //decrlaring variables to store the input values
@@ -26,6 +28,8 @@ int valL=0;
 // the setup routine runs once when you press reset:
 void setup() {
   //set input pins
+  //pinMode(phototransU, INPUT); 
+  //pinMode(phototransC, INPUT);
   pinMode(phototransR, INPUT);
   pinMode(phototransL, INPUT);
   setupArdumoto(); // Set all pins as outputs
